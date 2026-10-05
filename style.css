@@ -1,0 +1,27 @@
+ * {  
+    /* margin: ; */
+    /* padding: 0; */
+    box-sizing: border-box;
+    }
+    
+:root {        
+    /* Colors */
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 65%, 17%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+
+    /* fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    --Font-Family: 'Inter', sans-serif;
+    --Font-Weight-Regular: 400;
+    --Font-Weight-Semibold: 600;
+    --Font-Weight-Bold: 700;
+}
+body {
+    font-family: var(--Font-Family);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
