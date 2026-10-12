@@ -1,27 +1,106 @@
  * {  
-    /* margin: ; */
-    /* padding: 0; */
+    margin:0;
+    padding: 0;
     box-sizing: border-box;
     }
+    @font-face{
+        font-family: 'Inter-Bold';
+        src: url('..social-links-profile-main/assets/fonts/static/Inter-Bold.ttf');
+        font-weight: 700;
+        font-style: bold;
+    }
+    @font-face{
+        font-family: 'Inter-Regular';
+        src: url('../social-links-profile-main/assets/fonts/static/Inter-Regular.ttf');
+        font-weight: 600;
+        font-style: regular;
+    }
+    @font-face{
+        font-family: 'Inter-Semibold';
+        src: url('..social-links-profile-main/assets/fonts/static/Inter-SemiBold.ttf');
+        font-weight: 500;
+        font-style: semibold;
+    }
     
-:root {        
+:root {     
     /* Colors */
     --Green: hsl(75, 94%, 57%);
     --White: hsl(0, 0%, 100%);
-    --Grey-700: hsl(0, 65%, 17%);
+    --Grey-700: hsl(0, 0%, 20%);
     --Grey-800: hsl(0, 0%, 12%);
     --Grey-900: hsl(0, 0%, 8%);
 
     /* fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-    --Font-Family: 'Inter', sans-serif;
-    --Font-Weight-Regular: 400;
-    --Font-Weight-Semibold: 600;
-    --Font-Weight-Bold: 700;
+    --Font-Family: 'Inter-Regular', sans-serif;    
+    --Font-Family-Bold: 'Inter-Bold', sans-serif;
+    --Font-Family-Semibold: 'Inter-Semibold', sans-serif
 }
 body {
     font-family: var(--Font-Family);
     display: flex;
     flex-direction: column;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--Grey-900);
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--Grey-800);
+    border-radius: 0.5rem;
+    font-family: var(--Font-Family);
+    gap: 1rem;
+}
+.image-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: var(--Font-Family);
+}
+.image-section>img {
+    width: 5rem;
+    /* height: 5rem; */
+    border-radius: 100%;
+    object-fit: cover;
+}
+.name-location{
+    text-align: center;
+} 
+.name-location h1{
+    font-family: var(--Font-Family-Semibold);
+    color: var(--White);
+}
+.name-location p {
+    font-family: var(--Font-Family-Regular);
+    color: var(--Green);
+}
+
+.profile-description{
+    text-align: center;
+    color: var(--White);
+    padding: 0.5rem;
+}
+.links-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    width: 100%;
+} 
+.link {
+    text-decoration: none;
+    border-radius: 0.5rem;
+    color: var(--White);
+    padding: 1rem;
+    background-color: var(--Grey-700);
+    justify-content: center;
+    width: 100%;
 }
